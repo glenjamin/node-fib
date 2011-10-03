@@ -2,6 +2,29 @@
 
 A little express server that gives you back whatever fibonacci number you ask for
 
+## Coming here from Hacker News?
+
+Hello there! You've stumbled across a short script I wrote to see how effective a
+non-blocking implementation would be for the famous NodeJS cancer also known as
+calculating the fibonacci sequence recursively.
+
+They key differences from the original algorithm are that process.nextTick is used
+agressively (probably too agressibvely), so ensure that the main event loop is not
+blocked. In addition, memoisation is used which is shared across concurrent and
+subsequent requests without having to worry about locking.
+
+Obviously there are other algorithms to calculate the nth term of the fibonacci
+sequence, many of which will be more effective than this one (although I do like
+how easy it is to memoise this). Some people have already mentioned a few of these
+in the issues section. As this is a toy rather than a real project I'm unlikely
+to implement these improvements unless they sound particularly fun or I have some
+time to kill on a train.
+
+I would encourage anyone with suggestions of improvements to have a go at them
+yourself, especially if you're not familiar with NodeJS - you may even like it.
+I would also encourage any similar implementations in non-reactor frameworks as
+a comparison of the relative merits and disadvantages of event loops vs threads.
+
 ## Usage
 
     node app.js &
