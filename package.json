@@ -1,0 +1,15 @@
+{
+  "author": "Glen Mailer <glenjamin@gmail.com>",
+  "name": "fib",
+  "description": "Use express to return fibonacci numbers",
+  "version": "1.0.0",
+  "repository": {
+    "url": ""
+  },
+  "main": "app",
+  "engines": {
+    "node": "~v0.4.12"
+  },
+  "dependencies": {"express":"2.4.x", "async":"0.1.x"},
+  "devDependencies": {}
+}
