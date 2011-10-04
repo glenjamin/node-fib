@@ -9,7 +9,7 @@ non-blocking implementation would be for the famous NodeJS cancer also known as
 calculating the fibonacci sequence recursively.
 
 They key differences from the original algorithm are that process.nextTick is used
-agressively (probably too agressibvely), so ensure that the main event loop is not
+agressively (probably too agressively), so ensure that the main event loop is not
 blocked. In addition, memoisation is used which is shared across concurrent and
 subsequent requests without having to worry about locking.
 
