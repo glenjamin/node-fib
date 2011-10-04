@@ -1,4 +1,3 @@
-var async = require('async');
 var app = require('express').createServer();
 
 var fibonacci = function(n, callback) {
@@ -22,6 +21,8 @@ var fibonacci = function(n, callback) {
 
 /*** For reference, and to save you looking at the revision history,
  *   this is the previous implementation.
+
+var async = require('async');
 var fibonacci = function(n, callback) {
     if (n <= 2) {
         callback(null, 1);
