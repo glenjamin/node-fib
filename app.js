@@ -6,8 +6,8 @@ var fibonacci = function(n, callback) {
             callback(null, n2);
             return;
         }
-        var func = (i % 100) ? inner : inner_tick;
-        func(n2, n1 + n2, i + 1);
+        
+        (i % 100 ? inner : inner_tick)(n2, n1 + n2, i + 1);
     }
     var inner_tick = function(n1, n2, i) {
         process.nextTick(function() { inner(n1, n2, i); });
