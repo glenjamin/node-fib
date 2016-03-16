@@ -1,4 +1,4 @@
-var app = require('express').createServer();
+var app = require('express')();
 
 var fibonacci = function(n, callback) {
     var inner = function(n1, n2, i) {
